@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <!-- choosing player -->
+    <section class="choose-player" id="start">
+        <div class="main-a">
+            <h2>Tic Tac Toe</h2>
+            <h3>Which player you want to be?</h3>
+            <div class="btn">
+                <button id="x-btn" onclick="selectplayer('player1')">Player (X)</button>
+                <button id="o-btn" onclick="selectplayer('player2')">Player (O)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- playboard section-->
+    <section class="playboard hide">
+        <div class="main-b">
+            <div class="players-details">
+                <button id="player1" class="players">Player (X)'s Turn</button>
+                <button id="player2" class="players">Player (O)'s Turn</button>
+            </div>
+            <div class="boxes-main">
+                <div class="row1">
+                    <span class="box boxn1"></span>
+                    <span class="box boxn2"></span>
+                    <span class="box boxn3"></span>
+                </div>
+                <div class="row2">
+                    <span class="box boxn4"></span>
+                    <span class="box boxn5"></span>
+                    <span class="box boxn6"></span>
+                </div>
+                <div class="row3">
+                    <span class="box boxn7"></span>
+                    <span class="box boxn8"></span>
+                    <span class="box boxn9"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- result box -->
+    <section class="resultbox hide">
+        <div class="main-c">
+            <h2 id="match">player <span id="winText">X</span> won the match!!!</h2>
+            <button class="restart-btn" onclick="restart()">Replay</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
